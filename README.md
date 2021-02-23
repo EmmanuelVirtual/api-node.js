@@ -2,7 +2,7 @@
 
 ## Sobre
 
-O NPS-API é uma API Restful para Net Promoter Score.
+O API - NODE.JS é uma API Restful para Net Promoter Score.
 
 Aplicação web construída na trilha NodeJS da Next Level Week distribuída pela https://rocketseat.com.br/
 
