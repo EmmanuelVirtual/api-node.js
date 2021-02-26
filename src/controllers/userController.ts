@@ -9,7 +9,18 @@ class UserController {
         
         const usersRepository = getRepository(User);
 
-        const user = sersRepository.create({
+        // SELECT * FROM USRS WHERE EAMIL = "EMAIL"
+        const userAlreadyExists = await usersRepository.findOne({
+            email
+        });
+
+        if(userAlreadyExists) {
+            return response.status(400).json({
+                error: "User already exists!",
+            });
+        }
+
+        const user = usersRepository.create({
             name, email
         })
 
