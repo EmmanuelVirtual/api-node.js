@@ -11,7 +11,7 @@ describe("Surveys", () =>{
 
     it("Should be able to create a new Survey", async () => {
         const response = await request(app).post("/surveys").send({
-            title: "Tiel Example",
+            title: "Title Example",
             description: "Description Example",
     });
 
@@ -21,7 +21,7 @@ describe("Surveys", () =>{
 
     it("Should be able to get all surveys", async () => {
         await request(app).post("/surveys").send({
-            title: "Tiel Example2",
+            title: "Title Example2",
             description: "Description Example2",
     });
 
